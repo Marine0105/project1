@@ -2,12 +2,12 @@ import { response } from 'express';
 import User from '../models/user.model.js';
 import bcryptjs from 'bcryptjs';
 
-export const signup = async (req, res) => {
+export const signup = async (req, res,next) => {
     const { username, password ,email} = req.body;
 
 
     if (!email || !username || !password  || email== '' || username== '' || password== '') {
-      return res.status(400).json({ message:'ALL FIELDS ARE REQUIRED' });
+      return next(errorHandler(400,'all fileds are required'));
 
     }
 
@@ -21,7 +21,7 @@ export const signup = async (req, res) => {
             await newUser.save();
         res.json('User saved successfully');
         } catch (error) {
-            res.status(500).json({ error: error.message });
+           next(error);
             
         }
 }
