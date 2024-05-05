@@ -1,0 +1,68 @@
+/* signup.css */
+
+/* Add your CSS styles here */
+.min-h-screen {
+    /* Example styles */
+    /* background-color: #c7b9b9; */
+    padding: 20px;
+    align-items: space-between;
+  }
+  
+  /* signup.css */
+
+.form-container {
+  border: 2px solid #3f1b75; /* Border style */
+  padding: 25px; /* Add padding for spacing */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  margin-left: 50px;
+  width: 50%;
+  margin: auto; 
+}
+/* .message{
+  margin-left: 10px 
+} */
+/* Input Styles */
+.form-container input {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+ 
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #3f1b75; /* Change border color on focus */
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Button Styles */
+.form-container .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container .button:hover {
+  background-image: linear-gradient(to right, #ff92a5, #86c8ff);
+}
+
+

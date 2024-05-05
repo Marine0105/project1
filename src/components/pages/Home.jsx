@@ -6,6 +6,7 @@ import "./Home.css";
 export const Home = () => {
   return (
 <group>
+  
     <p>This web application designed to revolutionize<br/> the way people exchange currencies online.<br/>
     on this system, you can quickly and easily<br/> exchange money from one currency to another,<br/> 
          saving time and money in the process.<br/>
