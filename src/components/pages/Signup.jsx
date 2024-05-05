@@ -40,8 +40,8 @@ export default function Signup() {
 
   return (
     <span>
-    <div className='min-h-screen mt-20'>
-      <div className='flex p-3 max-w-3xl mx-auto flex-col md:flex-row md:items-center gap-5'>
+    <div className='min-h-screen mt-15'>
+      <div className='flex p-3 mt-5  mx-auto flex-col md:flex-row  gap-5'>
         {/* left */}
         <div className='message'>
         <div className='flex-1'>
@@ -88,20 +88,21 @@ export default function Signup() {
                 onChange={handleChange}
               />
             </div>
-            <Button className='button'
-              gradientDuoTone='purpleToPink'
-              type='submit'
-              disabled={loading}
-            >
-              {loading ? (
-                <>
-                  <Spinner size='sm' />
-                  <span className='pl-3'>Loading...</span>
-                </>
-              ) : (
-                'Sign Up'
-              )}
-            </Button>
+            <Button className='button flex items-center justify-center'
+  gradientDuoTone='purpleToPink'
+  type='submit'
+  disabled={loading}
+>
+  {loading ? (
+    <>
+      <Spinner size='sm' />
+      <span className='pl-3'>Loading...</span>
+    </>
+  ) : (
+    'Sign Up'
+  )}
+</Button>
+
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Have an account?</span>
@@ -119,6 +120,6 @@ export default function Signup() {
     </div>
     </div>
 
-    </span>
+   </span>
   );
 }
